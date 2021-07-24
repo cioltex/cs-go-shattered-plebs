@@ -70,9 +70,9 @@ FN FAL replaces FAMAS/Galil
 AW Covert replaces AWP for terrorists
 - $4400
 - same stats as the AWP, except:
--- cycletime 0.96 instead of 1.455
--- range modifier 0.90 instead of 0.99
--- clip size from 10 to 6
+- - cycletime 0.96 instead of 1.455
+- - range modifier 0.90 instead of 0.99
+- - clip size from 10 to 6
 
 AUG
 - differentiated slightly more from SG
