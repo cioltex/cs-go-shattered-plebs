@@ -1,20 +1,13 @@
 
-CS:GO Shattered Plebs.
 
-
-----------Features and goals
+----------Features
 
 - fully accurate first shots, as standing/crouching inaccuracy is removed from all weapons, except for unscoped sniper rifles
-- more differentiation between the two opposing teams
+- more differentiation between the two teams
 - fewer undesirable guns
 - a creative starting round without high-powered rifles (start with $2500)
 - basic fraud rules for bot matches, for this you must run "exec gamemode_pleb" in console
 
-
-----------Known issues
-
-- to avoid worse bugs, the AWP and AW Covert are available in the inventory for both T and CT, their intended use is for the AWP to be a CT weapon and for the AW Covert to be a T weapon, and this can be done by setting them up appropriately in the inventory
-- the AUG doesn't show a crosshair when unscoped, despite being a rifle
 
 
 ----------Changes
@@ -22,7 +15,22 @@ CS:GO Shattered Plebs.
 Knife
 - terrorists' lethality with the knife is closer to old CS
 - terrorist knife ignores armor, the left+left+right kill combo is more consistent and with optimal swings left+right can kill also
-- counter-terrorist knife is unchanged
+
+Grenades
+- counter-terrorists start with a free smoke each round 
+
+R3 Revolver
+- revisiting the 2015 revolver that had AWP damage
+- from $600 to $950
+- speed from 220 to 210
+- damage from 86 to 115
+- cycletime from 0.5 to 0.9
+- range modifier from 0.94 to 0.88
+= inaccuracy move from 6.5/36 to 176 (same as AWP)
+- no longer "full auto"
+- clip/reserve from 8/8 to 3/9
+- award from $300 to $100 (not implemented yet)
+- secondary burst mode
 
 Nova
 - old CS movement speed
@@ -32,16 +40,29 @@ XM1014
 - old CS properties
 - $2000 to $3000
 - damage from 20 to 19
-- ROF from 171 RPM to 240 RPM
+- cycletime from 0.35 to 0.25 (171 RPM to 240 RPM)
 - move speed from 215 to 240 
 
-Sawed Off/MAG-7
-- both are considered secondary weapons
-- both have movement speeds of 250
-- mag-7 from $1300 to $1400
-- sawed off from $1100 to $1200
-- sawed off magazine from 7 to 5, reserve from 32 to 15
-- mag-7 reserve from 32 to 20
+Sawed-Off
+- $1100 to $1200
+- secondary weapon
+- magazine from 7 to 5, reserve from 32 to 15
+- cycletime from 0.85 to 0.75
+- move speed from 210 to 240
+
+Mag-7
+- $1300 to $1400
+- secondary weapon
+- reserve from 32 to 15
+- move speed from 225 to 250
+
+MP5-PEN
+- close range penetrator
+- from $1500 to $1600
+- damage from 27 to 29
+- range modifier from 0.85 to 0.83
+- clip from 30 to 35
+- penetration from 1 to 5
 
 P90
 - from $2350 to $2250
@@ -53,12 +74,12 @@ SSG 08
 - move speed from 230 to 250
 - scoped move speed from 230 to 250
 - reload speed increased x1.5
-- experiment: does not unzoom after scoped shots
 
-M4A1-S (unsilenced)
-- inaccuracy move from 92.87 to 14.00 (similar to mac-10)
-- inaccuracy jump from 110 to 55
-- move speed from 225 to 235 (silenced speed from 225 to 220)
+M4A1-S
+- essentially transforms from a rifle to an SMG when unsilenced
+- unsilenced inaccuracy move from 92.87 to 14.00 (similar to mac-10)
+- unsilenced inaccuracy jump from 110 to 55
+- unsilenced move speed from 225 to 240 (silenced speed from 225 to 220)
 
 FN FAL replaces FAMAS/Galil
 - $3800
@@ -70,23 +91,26 @@ FN FAL replaces FAMAS/Galil
 AW Covert replaces AWP for terrorists
 - $4400
 - same stats as the AWP, except:
-- - cycletime 0.96 instead of 1.455
-- - range modifier 0.90 instead of 0.99
-- - clip size from 10 to 6
+-- cycletime 0.96 instead of 1.455
+-- range modifier 0.90 instead of 0.99
+-- clip size from 10 to 6
 
 AUG
 - differentiated slightly more from SG
-- aim sights replaced with a sniper scope with fov 22 (aug/sg fov is 45, awp fov is 10)
+- aim sights replaced with a sniper scope with fov 23 (aug/sg fov is 45, awp fov is 10)
 - unscoped recoil magnitude from 24 to 32
 
 M249
-- recoil decreased by 20% (recoil angle variance 50 to 40, recoil magnitude from 25 to 20)
+- spraying penetrator
+- recoil unchanged
 - cycletime from 0.08 to 0.075 (750 RPM to 800 RPM)
+- penetration from 2 to 5
 
 NEGEV
 - $1700 to $2100
 - cycletime from 0.075 to 0.07 (800 RPM to 857 RPM)
 - recoil increased from zero (recoil angle alt 0 to 20, recoil angle variance alt 0 to 20)
+- penetration from 2 to 1
 
 SCAR-20
 - damage from 80 to 96
@@ -104,4 +128,3 @@ Zeus
 - similar properties to the knife
 - speed 220 to 250
 - kill award from $0 to $2000
-
